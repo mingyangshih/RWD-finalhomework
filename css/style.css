@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+:root{
+	--fm:'Noto Sans TC';
+}
+
+.wrap{
+	max-width: 1049px;
+	margin: 0 auto;
+}
+/* header banner*/
+.banner{
+	position:relative;
+	height: 420px;
+	background-image:url("../images/header_desktop.png");
+	z-index:1;
+	background-position: center center;
+	background-repeat:no-repeat;
+	width: 100%;
+}
+header{
+	
+	height: auto;
+	background-position: center center;
+	background-repeat:no-repeat;
+}
+
+.header_logo_list{
+	color:white;                     
+	position:absolute;
+	z-index: 3;
+	width:100%;
+	font-family: var(--fm);
+	background-color: rgba(0,0,0,0.75);
+}
+.header_logo_list:hover{
+	background-color: rgba(160,160,160,0.75);
+}
+
+.header_logo_list h1 a{
+	text-decoration: none;
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height:24px;
+	margin:16px 0 16px 42px;
+	display:block;
+	float:left;
+}
+.header_logo_list h1 a:hover{
+	color:#ADF5FB;
+}
+
+
+
+.header_logo_list .list{
+	float:right;
+	margin-right: 48px;
+	margin-top: 18px;
+}
+.list li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: 'Microsoft JhengHei';
+	font-size: 16px;
+}
+.list li{
+	float:left;
+	
+}
+.list li a:hover{
+	color:#ADF5FB;
+}
+
+.list li:nth-child(1), .list li:nth-child(2){
+	margin-right: 30px;
+}
+
+@media (max-width: 376px){
+	.header_logo_list .list{
+		display:none;
+	}
+	.header_logo_list h1{
+		width: 100%;
+		display:block;
+		text-align: center;
+		font-size: 16px;
+		margin:auto 0;
+	}
+}
+
+.banner_content{
+	font-family: 'Microsoft JhengHei';
+	background-color: rgba(0,0,0,0.35);
+	width: 43.851%;
+	z-index:5;
+	position:absolute;
+	margin-top: 123px;
+	margin-left: 28.122%;
+
+}
+.banner_content h2{
+	font-size: 36px;
+	color: #FFFFFF;
+	text-align: center;
+	display:block;
+	line-height:48px;
+	margin-top: 20px;
+}
+.banner_content p{
+	color:#fff;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 16px;
+	display:block;
+}
+.banner_content span{
+	display:block;
+	line-height: 26px;
+	margin-bottom: 26px;
+}
